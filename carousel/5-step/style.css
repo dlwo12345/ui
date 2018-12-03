@@ -1,0 +1,118 @@
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 캐러셀 시작 */
+.section_carousel {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: white;
+    position: relative;
+}
+
+.section_carousel>h2 {
+    text-align: center;
+    color: #6d6d6d;
+    font-size: 30px;
+    font-weight: 100;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.section_carousel>a {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: #cd9f7a;
+    font-style: italic;
+}
+
+.section_carousel>a>i {
+    padding-left: 15px;
+}
+
+.carousel_view {
+    width: 1260px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel_view .carousel_list {
+    width: 300%;
+    margin-left: -420px;
+}
+
+.carousel_view .carousel_list>li {
+    width: 10.58201%;
+    float: left;
+    overflow: hidden;
+    margin-left: 0.26455%;
+    margin-right: 0.26455%;
+    position: relative;
+}
+
+.carousel_view .carousel_list>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel_view .carousel_list>li>a img {
+    width: 100%;
+}
+
+.carousel_list_text {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+
+.carousel_list>li img {
+    transition: all 0.3s;
+}
+
+.carousel_list>li:hover img {
+    transform: scale(1.03);
+}
+
+.carousel_list>li:hover .carousel_list_text {
+    border-bottom: 1px solid #a68164;
+}
+
+.carousel_list_text>h4 {
+    color: #a68164;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.carousel_list_text>p {
+    font-style: italic;
+    font-size: 15px;
+}
+
+.carousel_prev {
+    position: absolute;
+    color: #000;
+    left: 2%;
+    top: 50%;
+    cursor: pointer;
+}
+
+.carousel_next {
+    position: absolute;
+    color: #000;
+    right: 2%;
+    top: 50%;
+    cursor: pointer;
+}
+
+
+/* 캐러셀 끝 */
