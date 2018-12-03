@@ -1,4 +1,4 @@
-# publishing-watch
+# jaehong-ui
 - jquery 슬라이드, 캐러셀, 스크롤 스파이, 아코디언, 모달팝업 기능 직접 만들기
 
 ## 사용언어
