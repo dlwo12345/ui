@@ -1,9 +1,3 @@
-.clear:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 /* 캐러셀 시작 */
 .section_carousel {
     width: 100%;
