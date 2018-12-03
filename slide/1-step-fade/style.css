@@ -1,0 +1,92 @@
+.slider {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .panel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider .panel li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+
+.panel li:nth-child(1) {
+    background-color: red;
+    display: block;
+}
+
+.panel li:nth-child(2) {
+    background-color: blue;
+}
+
+.panel li:nth-child(3) {
+    background-color: green;
+}
+
+.panel li:nth-child(4) {
+    background-color: yellow;
+}
+
+.btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -70px;
+}
+
+.btn li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: cadetblue;
+    border-radius: 50%;
+    text-indent: -9999px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn .on {
+    background-color: #000;
+}
+
+.btn li:hover {
+    background-color: #000;
+}
+
+.btn li:last-child {
+    margin-right: 0px;
+}
+
+.prev {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    margin-top: -15px;
+}
+
+.next {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    margin-top: -15px;
+}
