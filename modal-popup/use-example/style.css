@@ -1,4 +1,4 @@
-.btn {
+.btn, .btn:link {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -29,7 +29,7 @@
     transform: translate(-50%, -50%);
     width: 300px;
     height: 300px;
-    border: 10px solid blue;
-    background-color: red;
+    border: 10px solid orange;
+    background-color: yellow;
     overflow: auto;
 }
