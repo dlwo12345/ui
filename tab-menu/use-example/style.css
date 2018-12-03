@@ -1,0 +1,61 @@
+.tab_wrap {
+    width: 480px;
+    margin: 0 auto;
+}
+
+.tab_btn:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.tab_btn li {
+    float: left;
+    display: block;
+    width: 110px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: aqua;
+    color: #000;
+    text-align: center;
+    line-height: 20px;
+}
+
+.tab_btn li.on {
+    background-color: gray;
+    color: red;
+}
+
+.tab_cont {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background-color: pink;
+}
+
+.tab_cont>li {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.tab_cont>li:nth-child(1) {
+    background-color: red;
+    display: block;
+}
+
+.tab_cont>li:nth-child(2) {
+    background-color: blue;
+}
+
+.tab_cont>li:nth-child(3) {
+    background-color: green;
+}
+
+.tab_cont>li:nth-child(4) {
+    background-color: yellow;
+}
