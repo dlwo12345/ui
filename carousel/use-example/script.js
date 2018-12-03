@@ -30,12 +30,13 @@ function carousel() {
         });
 
         // 자동실행
-        // carousel_autoPlay();
+        carousel_autoPlay();
 
         // 자동실행 멈춤
-        // carousel_autoPlayStop();
+        carousel_autoPlayStop();
+        
         // 자동실행 재시작
-        // carousel_autoPlayRestart();
+        carousel_autoPlayRestart();
 
         // 리사이즈 사이즈 재조정
         resize();
