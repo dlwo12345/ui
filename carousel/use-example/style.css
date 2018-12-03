@@ -116,3 +116,23 @@
 
 
 /* 캐러셀 끝 */
+
+@media screen and (max-width:1200px) {
+    .carousel_prev {
+        display: none;
+    }
+
+    .carousel_next {
+        display: none;
+    }
+
+    .carousel_view {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .carousel_view {
+        width: 95%;
+    }
+}
