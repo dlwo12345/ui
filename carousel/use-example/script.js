@@ -34,19 +34,21 @@ function carousel() {
 
         // 자동실행 멈춤
         carousel_autoPlayStop();
-        
+
         // 자동실행 재시작
         carousel_autoPlayRestart();
 
         // 리사이즈 사이즈 재조정
         resize();
     }
+
     // 자동실행
     function carousel_autoPlay() {
         auto = setInterval(function () {
             carousel_nextMove();
         }, 5000);
     }
+
     // 자동실행 멈춤
     function carousel_autoPlayStop() {
         /* 마우스 올렸을때 캐러셀 자동 멈춤 */
@@ -54,12 +56,14 @@ function carousel() {
             clearInterval(auto);
         });
     }
+
     // 자동실행 재시작
     function carousel_autoPlayRestart() {
         $(".carousel_view").mouseleave(function () {
             carousel_autoPlay();
         });
     }
+
     // 다음버튼 눌렀을때,자동실행 실제 동작하는 부분
     function carousel_prevMove() {
         $carousel_list.stop().animate({
