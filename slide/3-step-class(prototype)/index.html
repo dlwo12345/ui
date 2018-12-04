@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 초기화 소스 -->
+    <link rel="stylesheet" href="../../public/common.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- script -->
+    <script src="./script.js"></script>
+    <script>
+        $(document).ready(function () {
+            var slide = new Slide();
+        });
+    </script>
+    <title>슬라이드 - class(prototype)</title>
+</head>
+
+<body>
+    <div class="slide">
+        <ul class="panel">
+            <li>1번슬라이드</li>
+            <li>2번슬라이드</li>
+            <li>3번슬라이드</li>
+        </ul>
+        <ul class="dot">
+            <li class="on">슬라이드 버튼1번</li>
+            <li>슬라이드 버튼2번</li>
+            <li>슬라이드 버튼3번</li>
+        </ul>
+        <div class="prev">이전</div>
+        <div class="next">이후</div>
+    </div>
+</body>
+
+</html>
