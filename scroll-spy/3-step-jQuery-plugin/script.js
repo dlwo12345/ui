@@ -40,6 +40,8 @@ $(document).ready(function () {
         this.$q_menu_ul = null;
         this.$q_menu_li = null;
 
+        this.fixChk = false; // 고정여부 확인
+
         this.now_scroll = 0; // 현재 나의 스크롤 위치값 저장하는 변수
 
         this.scroll_num = []; // 영역별 스크롤 위치값 저장하기 위한변수
@@ -66,6 +68,8 @@ $(document).ready(function () {
         this.$q_menu_li = this.$q_menu_ul.children('li'); // 퀵메뉴 li
         this.$scroll = $(".scroll"); // 메뉴 클릭시 이동될 영역들
         this.scroll_length = this.$scroll.length; // 메뉴 클릭시 이동될 영역들 갯수
+
+        this.nav_top = this.$q_menu_ul.offset().top; // 메뉴 고정 실행되는 스크롤 위치
 
         // 영역별 스크롤 위치값 저장하기
         for (var i = 0; i < this.scroll_length; i++) {
@@ -94,8 +98,34 @@ $(document).ready(function () {
             // 현재 나의 스크롤 위치값 갱신
             objThis.now_scroll = $(window).scrollTop();
 
+            objThis.nav_fixed(); // 헤더 고정함수 호출
+
             objThis.menu_select(); // 선택 함수 호출(위치값에 해당하는 버튼 색상변경)
         });
+    }
+
+    // 헤더 고정 로직
+    HongScroll.prototype.nav_fixed = function () {
+        // 현재 내 스크롤값이 헤더 네비게이션 위치만큼 왔을때
+        if (this.now_scroll >= this.nav_top) {
+            // fix여부를 확인한후(거짓이면 실행)
+            if (this.fixChk === false) {
+                // 고정하고
+                this.$q_menu_ul.addClass('fixed');
+
+                // fix 되었다고 값저장
+                this.fixChk = true;
+            }
+        } else { // 현재 내 스크롤이 헤더 네비게이션 위치보다 위에 있을때
+            // fix 여부를 확인한후(참이면 실행)
+            if (this.fixChk === true) {
+                // 고정 풀기
+                this.$q_menu_ul.removeClass('fixed');
+
+                // fix를 풀었다고 값저장
+                this.fixChk = false;
+            }
+        }
     }
 
     // 현재 위치별 메뉴 select(색상변경)
